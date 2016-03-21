@@ -1,4 +1,4 @@
-This is a basic boilerplate for creating frontend applications using ES6, React, webpack. This also includes experiment features and features from ES7 including:
+This is a basic boilerplate for creating frontend applications using ES6, React, webpack. This also includes experimental features and features from ES7 including:
 - transform-class-properties
 - transform-object-rest-spread
 - add-module-exports
