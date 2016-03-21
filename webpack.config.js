@@ -7,9 +7,6 @@ module.exports = {
         path: __dirname,
         filename: "./dist/build.js"
     },
-    // resolveLoader: {
-    //     root: path.join(__dirname, "node_modules")
-    // },
     module: {
         loaders: [
             {
