@@ -5,7 +5,6 @@ import Markdown from 'react-markdown';
 
 class Project extends Component {
     render = () => {
-        console.log(this.props);
         return <div className="container">
             <h2>{this.props.project.name}</h2>
             <Image
@@ -19,8 +18,6 @@ class Project extends Component {
 const mapStateToProps = (state, ownProps) => {
   return {
     project: state.projects.filter((project) => {
-        console.log(project);
-        console.log(ownProps);
         if(project.id == ownProps.routeParams.projId)
             return true;
         return false;

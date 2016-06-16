@@ -1,18 +1,13 @@
-let default_state = [
-    {
-        id: 1,
-        name: 'project 1',
-        image: 'https://avatars1.githubusercontent.com/u/2301403?v=3&s=460',
-        thumb: 'https://avatars1.githubusercontent.com/u/2301403?v=3&s=460',
-        text: 'md text here',
-        blurb: 'blurb text here'
-    }
-]
+import { LOAD } from '../actions.js';
+
+let default_state = []
 
 
 export default function projects(state = default_state, action) {
     switch (action.type) {
+    case LOAD:
+        return action.data.projects;
     default:
-        return state
+        return state;
     }
 }
