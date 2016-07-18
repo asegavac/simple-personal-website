@@ -8,7 +8,7 @@ class About extends Component {
     render = () => <div>
         <Grid>
             <Row>
-                <Col xs={3} md={3}>
+                <Col xs={4} md={3}>
                     <Image
                         rounded
                         src={this.props.user.image}
@@ -22,7 +22,7 @@ class About extends Component {
                     <h5><a href={this.props.user.website}>{this.props.user.website}</a></h5>
                     <hr/>
                 </Col>
-                <Col xs={9} md={9}>
+                <Col xs={8} md={9}>
                     <h2>About Me</h2>
                     <Markdown source={this.props.user.about}/>
                 </Col>

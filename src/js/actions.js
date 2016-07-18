@@ -8,7 +8,7 @@ export function load(data){
 }
 
 export function query(action){
-    $.ajax(/*document.location.origin*/ 'http://localhost:8080' + '/api/users/', {success: (data) => {
+    $.ajax(document.location.origin + '/api/users/', {success: (data) => {
         if(data.length){
             return action(data[0]);
         }
