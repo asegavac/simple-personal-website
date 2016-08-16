@@ -7,6 +7,7 @@ let default_state = {
 export default function user(state = default_state, action) {
     switch (action.type) {
     case LOAD:
+        document.title = action.data.name;
         return {
             is_loading: false,
             name: action.data.name,

@@ -8,7 +8,7 @@ class About extends Component {
     render = () => <div>
         <Grid>
             <Row>
-                <Col xs={4} md={3}>
+                <Col xs={12} md={3}>
                     <Image
                         rounded
                         src={this.props.user.image}
