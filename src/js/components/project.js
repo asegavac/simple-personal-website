@@ -9,7 +9,8 @@ class Project extends Component {
             <h2>{this.props.project.name}</h2>
             <Image
                 src={this.props.project.image}
-                style={{width: 230, height: 230, display: 'block'}}/>
+                style={{margin: 'auto', height: 230, display: 'block'}}/>
+            <hr/>
             <Markdown source={this.props.project.text}/>
         </div>;
     }
